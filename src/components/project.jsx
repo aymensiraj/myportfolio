@@ -99,7 +99,7 @@ const Projects = () => {
                   </div>
                   :
                 <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white rotate-[-45deg]">
-                  <a href={p.demo}><GrFormNextLink/></a>
+                  <a target="_blank" rel="noopener noreferrer" href={p.demo}><GrFormNextLink/></a>
                 </div>
                 
                 }
