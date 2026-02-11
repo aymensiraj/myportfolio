@@ -51,7 +51,7 @@ const Hero = () => {
           <MotionSpan
             animate={{ opacity: [0, 1, 0] }}
             transition={{ repeat: Infinity, duration: 0.8 }}
-            className="ml-1 inline-block w-1 h-6 md:h-8 bg-indigo-500"
+            className="ml-1 inline-block w-1 h-6 lg:mt-5 md:h-8 bg-indigo-500"
           ></MotionSpan>
         </MotionDiv>
       </div>
