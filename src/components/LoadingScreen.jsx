@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const LoadingScreen = ({ onFinished }) => {
   const text = "WELCOME TO MY PORTFOLIO";
 
-  // Animation dyal l-7rouf
+  // Animation dyal l7orouf
   const sentence = {
     hidden: { opacity: 1 },
     visible: {
@@ -34,7 +34,6 @@ const LoadingScreen = ({ onFinished }) => {
           initial="hidden"
           animate="visible"
           onAnimationComplete={() => {
-            // Katsenwa wa7ed chwiya mor ma katsali l-ktaba 3ad kancashouha
             setTimeout(onFinished, 1500);
           }}
           className="text-3xl md:text-6xl font-black text-white tracking-widest uppercase italic"
@@ -51,15 +50,15 @@ const LoadingScreen = ({ onFinished }) => {
           ))}
         </MotionDiv>
         
-        {/* Line Loading progress bar (Optional) */}
+        {/* Loading bar*/}
         <MotionDiv 
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          transition={{ duration: 2, ease: "easeInOut" }}
-          className="h-[2px] bg-indigo-500 mt-8 mx-auto max-w-[200px]"
+          transition={{ duration: 5, ease: "easeInOut" }}
+          className=" h-[2px] bg-indigo-500 mt-8 mx-auto max-w-[200px]"
         />
       </div>
-    </MotionDiv>
+   </MotionDiv>
   );
 };
 

@@ -34,7 +34,7 @@ const projects = [
     demo : "in progess" ,
     img:""
   },
-];
+]
 
 const Projects = () => {
   const MotionDiv = motion.div
@@ -59,18 +59,14 @@ const Projects = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
             whileHover={{ y: -15 }}
-            /* Width 9sir (300px) w Height wa9fa (450px) */
             className="min-w-[280px] md:min-w-[320px] h-[480px] snap-center relative group"
           >
-            {/* L-Card l-asasiya rounded b-tariqa creative */}
             <div className="w-full h-full bg-[#111] rounded-[2.5rem] border border-white/5 overflow-hidden flex flex-col p-6 transition-all duration-500 group-hover:border-indigo-500/30 group-hover:shadow-[0_20px_50px_rgba(79,70,229,0.1)]">
-              
-              {/* Blasa dial tswira sghira l-fouq */}
+
               <div className="w-full h-52 bg-white/5 rounded-[2rem] overflow-hidden mb-6 border border-white/5">
                 <img src={p.img} alt={p.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
               </div>
 
-              {/* Title & Desc */}
               <div className="flex-1">
                 <h4 className="text-2xl font-bold text-white mb-3 tracking-tight group-hover:text-indigo-400 transition-colors">
                   {p.title}
@@ -80,7 +76,6 @@ const Projects = () => {
                 </p>
               </div>
 
-              {/* Tech Stack (Rounded Tags) */}
               <div className="mt-auto">
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
                   {p.tech.map(t => (
@@ -91,7 +86,6 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Arrow Icon floating f-l-jnib */}
               <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {p.demo == "in progess" ?
                   <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white rotate-[-45deg]">

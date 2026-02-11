@@ -43,7 +43,7 @@ const skills = [
     accent: "group-hover:shadow-[0_0_30px_rgba(234,179,8,0.2)]",
     dot: "bg-yellow-500" 
   }
-];
+]
 
 const Skills = () => {
   const MotionDiv = motion.div
@@ -79,7 +79,6 @@ const Skills = () => {
                   key={id} 
                   className={`flex items-center gap-2 px-3 py-2 rounded-xl ${t.bg_color} border border-white/5 transition-all duration-300 group-hover:border-white/20`}
                 >
-                  {/* Tool Logo */}
                   <img 
                     src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace('text-[#', '').replace(']', '')}`} 
                     alt={t.name}

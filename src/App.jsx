@@ -9,13 +9,14 @@ import Skills from "./components/skills"
 import Projects from './components/project';
 import Contact from './components/contact';
 import Footer from './components/footer';
-
+import CustomCursor from './components/mouseMove';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const MotionDiv = motion.div
   return (
     
-    <div className="bg-[#050505] min-h-screen text-white selection:bg-indigo-500">
+    <div className="bg-[#050505] min-h-screen text-white selection:bg-indigo-500 cursor-custom-dot">
+      <CustomCursor/>
       <AnimatePresence mode="wait">
         {isLoading ? (
           <LoadingScreen key="loader" onFinished={() => setIsLoading(false)} />
