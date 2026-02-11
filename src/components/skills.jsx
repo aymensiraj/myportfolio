@@ -68,7 +68,7 @@ const Skills = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
             whileHover={{ y: -10 }}
-            className={`p-8 rounded-[2.5rem] bg-white/5 border border-white/10 transition-all duration-500 group ${skill.accent}`}
+            className={`p-8 rounded-[2.5rem] bg-white/5 border border-white/10 transition-all duration-50 group ${skill.accent}`}
           >
             <div className={`w-3 h-3 rounded-full mb-6 ${skill.dot} shadow-[0_0_10px_rgba(0,0,0,0.5)]`}></div>
             <h4 className="text-xl font-bold text-white mb-6 uppercase tracking-widest">{skill.name}</h4>
@@ -77,7 +77,7 @@ const Skills = () => {
               {skill.tools.map((t, id) => (
                 <div 
                   key={id} 
-                  className={`flex items-center gap-2 px-3 py-2 rounded-xl ${t.bg_color} border border-white/5 transition-all duration-300 group-hover:border-white/20`}
+                  className={`flex items-center gap-2 px-3 py-2 rounded-xl ${t.bg_color} border border-white/5 transition-all duration-100 group-hover:border-white/20`}
                 >
                   <img 
                     src={`https://cdn.simpleicons.org/${t.slug}/${t.color.replace('text-[#', '').replace(']', '')}`} 
