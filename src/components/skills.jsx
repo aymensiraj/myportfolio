@@ -34,7 +34,7 @@ const skills = [
     dot: "bg-green-500" 
   },
   { 
-    name: "Others", 
+    name: "tools", 
     tools: [
       { name: "Git", bg_color: "bg-[#F05032]/10", color: "text-[#F05032]", slug: "git" }, 
       { name: "GitHub", bg_color: "bg-[#ffffff]/10", color: "text-white", slug: "github" },
