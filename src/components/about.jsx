@@ -59,16 +59,7 @@ const About = () => {
           </MotionDiv>
 
 
-          <MotionDiv
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-          >
-            <button className="cursor-pointer px-8 py-4 bg-white text-black font-bold text-sm rounded-full hover:bg-indigo-600 hover:text-white transition-all duration-300 transform hover:scale-105 active:scale-95">
-              DOWNLOAD CV
-            </button>
-          </MotionDiv>
+
         </div>
       </div>
     </section>
