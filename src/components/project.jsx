@@ -7,13 +7,6 @@ import gestion_industrielle from "../assets/gestion-industrielle.png"
 const projects = [
   
   { 
-    title: "PAPER_ROCK_SCISSORS Game", 
-    desc: "simple game ", 
-    tech: ["React", "Tailwind"] ,
-    demo : "https://aymensiraj.github.io/PAPER_ROCK_SCISSORS/",
-    img : game_project
-  },
-  { 
     title: "Gestion de Stock Entreprise", 
     desc: "App management stock.", 
     tech: ["React", "Tailwind" , "Redux"],
@@ -21,18 +14,18 @@ const projects = [
     img : gestion_stock
   },
   { 
+    title: "PAPER_ROCK_SCISSORS Game", 
+    desc: "simple game ", 
+    tech: ["React", "Tailwind"] ,
+    demo : "https://aymensiraj.github.io/PAPER_ROCK_SCISSORS/",
+    img : game_project
+  },
+  { 
     title: "Fab Flow App", 
     desc: "Industrial Management App", 
     tech: ["React", "Tailwind", "Laravel", "My SQL"],
     demo : "in progess" ,
     img : gestion_industrielle
-  },
-  { 
-    title: "Social App", 
-    desc: "Modern networking platform with video features.", 
-    tech: ["React", "Tailwind", "Node JS", "Mongo Db"],
-    demo : "in progess" ,
-    img:""
   },
 ]
 
