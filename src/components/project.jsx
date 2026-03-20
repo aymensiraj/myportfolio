@@ -2,8 +2,10 @@ import { motion } from 'framer-motion';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { GrFormNextLink } from "react-icons/gr";
 import game_project from "../assets/game_project.png";
-import gestion_stock from "../assets/gestion_stock.png"
-import gestion_industrielle from "../assets/gestion-industrielle.png"
+import pizza from "../assets/pizza.png";
+import gestion_stock from "../assets/gestion_stock.png";
+import crispy from "../assets/crispy.png";
+
 const projects = [
   
   { 
@@ -21,12 +23,20 @@ const projects = [
     img : game_project
   },
   { 
-    title: "Fab Flow App", 
-    desc: "Industrial Management App", 
-    tech: ["React", "Tailwind", "Laravel", "My SQL"],
-    demo : "in progess" ,
-    img : gestion_industrielle
+    title: "Pizza Landing Page", 
+    desc: "landing page for pizza restaurant", 
+    tech: ["React", "Tailwind"] ,
+    demo : "https://aymensiraj.github.io/Pizza-LandingPage/",
+    img : pizza
   },
+  { 
+    title: "crispy landing page", 
+    desc: "landing page for crispy restaurant", 
+    tech: ["html", "css", "js"] ,
+    demo : "https://wassim005.github.io/Crispy/Project_27/main-page.html",
+    img : crispy
+  },
+
 ]
 
 const Projects = () => {
