@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { GrFormNextLink } from "react-icons/gr";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { useRef } from 'react';
 import game_project from "../assets/game_project.png";
 import pizza from "../assets/pizza.png";
 import gestion_stock from "../assets/gestion_stock.png";
@@ -48,6 +50,19 @@ const projects = [
 
 const Projects = () => {
   const MotionDiv = motion.div
+  const scrollContainer = useRef(null)
+
+  const scroll = (direction) => {
+    const container = scrollContainer.current
+    if (container) {
+      const scrollAmount = 320
+      container.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <section id="project" className="py-20 overflow-hidden">
       <MotionDiv 
@@ -59,9 +74,17 @@ const Projects = () => {
         <h3 className="text-4xl font-black text-white italic uppercase">Selected Works</h3>
       </MotionDiv>
 
-      {/* Container dyal les cards: Scroll horizontal smooth */}
-      <div className="flex gap-6 overflow-x-auto pb-10 pt-4 snap-x no-scrollbar">
-        {projects.map((p, i) => (
+      <div className="relative">
+        <button
+          onClick={() => scroll('left')}
+          className="cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-colors"
+          aria-label="Scroll left"
+        >
+          <MdArrowBackIos size={24} />
+        </button>
+
+        <div ref={scrollContainer} className="flex gap-6 overflow-x-auto pb-10 pt-4 snap-x no-scrollbar px-20">
+          {projects.map((p, i) => (
           <MotionDiv 
             key={i} 
             initial={{ opacity: 0, y: 30 }}
@@ -79,7 +102,9 @@ const Projects = () => {
 
               <div className="flex-1">
                 <h4 className="text-2xl font-bold text-white mb-3 tracking-tight group-hover:text-indigo-400 transition-colors">
-                  {p.title}
+                  <a className='cursor-pointer' href={p.demo} target="_blank" rel="noopener noreferrer">
+                    {p.title}
+                  </a>
                 </h4>
                 <p className="text-gray-500 text-sm leading-relaxed line-clamp-4">
                   {p.desc}
@@ -96,21 +121,19 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {p.demo == "in progess" ?
-                  <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white rotate-[-45deg]">
-                    <AiOutlineLoading3Quarters/>
-                  </div>
-                  :
-                <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white rotate-[-45deg]">
-                  <a target="_blank" rel="noopener noreferrer" href={p.demo}><GrFormNextLink/></a>
-                </div>
-                
-                }
-              </div>
+
             </div>
           </MotionDiv>
         ))}
+        </div>
+
+        <button
+          onClick={() => scroll('right')}
+          className="cursor-pointer absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-indigo-500 hover:bg-indigo-600 text-white p-2 rounded-full transition-colors"
+          aria-label="Scroll right"
+        >
+          <MdArrowForwardIos size={24} />
+        </button>
       </div>
     </section>
   );
