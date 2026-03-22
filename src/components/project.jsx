@@ -5,7 +5,7 @@ import game_project from "../assets/game_project.png";
 import pizza from "../assets/pizza.png";
 import gestion_stock from "../assets/gestion_stock.png";
 import crispy from "../assets/crispy.png";
-
+import cafe from "../assets/cafe.png";
 const projects = [
   
   { 
@@ -16,13 +16,6 @@ const projects = [
     img : gestion_stock
   },
   { 
-    title: "PAPER_ROCK_SCISSORS Game", 
-    desc: "simple game ", 
-    tech: ["React", "Tailwind"] ,
-    demo : "https://aymensiraj.github.io/PAPER_ROCK_SCISSORS/",
-    img : game_project
-  },
-  { 
     title: "Pizza Landing Page", 
     desc: "landing page for pizza restaurant", 
     tech: ["React", "Tailwind"] ,
@@ -30,11 +23,25 @@ const projects = [
     img : pizza
   },
   { 
+    title: "Cafe Landing Page", 
+    desc: "landing page for cafe  restaurant", 
+    tech: ["React", "Tailwind"] ,
+    demo : "https://aymensiraj.github.io/Cafe-landingPage/",
+    img : cafe
+  },
+  { 
     title: "crispy landing page", 
     desc: "landing page for crispy restaurant", 
     tech: ["html", "css", "js"] ,
     demo : "https://wassim005.github.io/Crispy/Project_27/main-page.html",
     img : crispy
+  },
+  { 
+    title: "PAPER_ROCK_SCISSORS Game", 
+    desc: "simple game ", 
+    tech: ["React", "Tailwind"] ,
+    demo : "https://aymensiraj.github.io/PAPER_ROCK_SCISSORS/",
+    img : game_project
   },
 
 ]
