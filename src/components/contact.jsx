@@ -16,7 +16,7 @@ const Contact = () => {
         
         </div> 
         <div className="lg:w-[430px] w-[330px] font-mono relative top-10 flex gap-2 items-center cursor-pointer rounded-full py-4 px-10 border-indigo-600 border-2 lg:text-2xl hover:bg-indigo-600 hover:border-black transition-colors duration-700 ">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aymensiraj089@gmail.com" target="_blank" rel="noopener noreferrer" className="">aymensiraj089@gmail.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aymansiraj089@gmail.com" target="_blank" rel="noopener noreferrer" className="">aymansiraj089@gmail.com</a>
             <IoCompassSharp  size={50} className=""/>
         </div>
     </section>

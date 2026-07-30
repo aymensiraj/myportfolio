@@ -3,13 +3,19 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { GrFormNextLink } from "react-icons/gr";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { useRef } from 'react';
-import game_project from "../assets/game_project.png";
 import pizza from "../assets/pizza.png";
 import gestion_stock from "../assets/gestion_stock.png";
-import crispy from "../assets/crispy.png";
 import cafe from "../assets/cafe.png";
+import CarRental from "../assets/landing page light.png";
 const projects = [
   
+  { 
+    title: "Car Rental App", 
+    desc: "App for renting cars.", 
+    tech: ["React", "Tailwind" , "Redux"],
+    demo : "https://github.com/aymensiraj/Car-rental",
+    img : CarRental
+  },
   { 
     title: "Gestion de Stock Entreprise", 
     desc: "App management stock.", 
@@ -30,20 +36,6 @@ const projects = [
     tech: ["React", "Tailwind"] ,
     demo : "https://aymensiraj.github.io/Cafe-landingPage/",
     img : cafe
-  },
-  { 
-    title: "crispy landing page", 
-    desc: "landing page for crispy restaurant", 
-    tech: ["html", "css", "js"] ,
-    demo : "https://wassim005.github.io/Crispy/Project_27/main-page.html",
-    img : crispy
-  },
-  { 
-    title: "PAPER_ROCK_SCISSORS Game", 
-    desc: "simple game ", 
-    tech: ["React", "Tailwind"] ,
-    demo : "https://aymensiraj.github.io/PAPER_ROCK_SCISSORS/",
-    img : game_project
   },
 
 ]

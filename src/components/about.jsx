@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import pfp2 from "../assets/pfp2.jpeg";
+import pfp2 from "../assets/aboutImg.png";
 
 const MotionDiv = motion.div
 const About = () => {
